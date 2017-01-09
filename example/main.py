@@ -1,5 +1,6 @@
 import numpy as np
 import scipy as sp
+import utils
 
 # example useful function
 def calc_deltas(x):
@@ -13,6 +14,9 @@ def main():
     x = sp.rand(10)
     print(x)
     print("Deltas: {0}".format(calc_deltas(x)))
+
+    print("\nGenerate random symmetric matrix")
+    print(utils.gen_rand_sym_mat(3))
 
 # if run from the command line
 if __name__ == "__main__":
