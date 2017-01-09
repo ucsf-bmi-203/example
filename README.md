@@ -5,7 +5,27 @@ Status](https://travis-ci.org/ucsf-bmi-203-2017/example.svg?branch=master)](http
 
 Example python project with testing.
 
+## usage
+
+To use the package, first run
+
+```
+conda install --yes --file requirements.txt
+```
+
+to install all the dependencies in `requirements.txt`. Then the package's
+main function (located in `example/__main__.py`) can be run as follows
+
+```
+python -m example
+```
+
 ## testing
 
-Install `pytest` via `conda` or `pip` and then run `python -m pytest
-test/*` from the root directory of this project.
+Testing is as simple as running
+
+```
+python -m pytest
+```
+
+from the root directory of this project.
