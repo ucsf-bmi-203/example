@@ -1,18 +1,28 @@
+# python of course and we don't need access to sudo atm
 language: python
 sudo: false
 
+# emails are annoying
+notifications:
+    email: false
+
+# build on Ubuntu 14.04 because the default is
+# really old
 os: linux
 dist: trusty
 
+# test on the latest version of python
 python:
     - "3.6"
 
+# only run travis on the master branch
 branches:
     only:
         - master
 
-# command to install dependencies
+# install dependencies listed in requirements
 install: "pip install -r requirements.txt"
 
+# run tests
 script:
     "python -m pytest -v test/*"
