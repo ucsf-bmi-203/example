@@ -7,7 +7,14 @@ Example python project with testing.
 
 ## usage
 
-To use the package, first run
+To use the package, first make a new conda environment and activate it
+
+```
+conda create -n exampleenv python=3
+source activate exampleenv
+```
+
+then run
 
 ```
 conda install --yes --file requirements.txt
